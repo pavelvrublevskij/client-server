@@ -6,16 +6,27 @@ Just use gradlew in your console. See How-To scope.
 Note! If you want to install gradle to your computer use official gradle page https://gradle.org/ how to do it.
 
 ##Requirements
+* Language JAVA 11
 * Gradle 6.3
 
 ##How-To
-
 ####Gradle
 To check if gradle works correctly, just run:
 ```
-gradlew build
+gradlew clean build
 ```
 or (if installed):
 ```
-gradle build
+gradle clean build
+```
+
+####Api
+Run api:
+```
+gradlew bootRun
+```
+or
+```
+gradlew clean bootJar
+java -jar build/libs/pvexample-api.jar
 ```
