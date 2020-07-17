@@ -3,7 +3,7 @@ server:
   port: 8082
   tomcat:
     # Will create tomcat-log directory inside your project. You can choose different locations here, i.e.: /var/log/propmtpay/tomcat
-    basedir: tomcat-log
+    basedir: logs/tomcat
     accesslog:
       enabled: true
       directory: logs
@@ -28,7 +28,7 @@ server:
 logging:
   file:
     # Will create pvexample-log directory inside your project. You can choose different locations here, i.e: /var/log/pvexample
-    path: pvexample-log
+    path: logs/pvexample
   level:
     lt:
       asprogramuoju: TRACE
