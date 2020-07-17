@@ -1,0 +1,39 @@
+Thumbs.db
+.DS_Store
+
+.gradle/
+gradle/
+out/
+classes/
+gradle.properties
+*.orig
+.mvn
+gradlew
+gradlew.bat
+build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
