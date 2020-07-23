@@ -41,6 +41,7 @@ dependencies {
     // put here sub project as dependencies
     implementation(project(":pvexample-main"))
     implementation(project(":infra-web"))
+    implementation(project(":infra-liquibase"))
 }
 
 tasks.wrapper {

@@ -21,7 +21,7 @@ gradle clean build
 ```
 
 ####Api
-Run api:
+Run api on dev mode (h2 db will be used):
 ```
 gradlew bootRun
 ```
@@ -30,3 +30,9 @@ or
 gradlew clean bootJar
 java -jar build/libs/pvexample-api.jar
 ```
+
+####H2
+To access h2 db open browser and write follow:
+* url address: __http://localhost:8082/api/h2__
+* Change JDBC URL to: __jdbc:h2:mem:pvexample_db;MODE=PostgreSQL;__
+* Press connect button
