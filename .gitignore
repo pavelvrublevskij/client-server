@@ -8,8 +8,6 @@ classes/
 gradle.properties
 *.orig
 .mvn
-gradlew
-gradlew.bat
 build/
 
 ### STS ###
