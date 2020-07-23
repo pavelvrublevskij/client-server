@@ -45,7 +45,7 @@ dependencies {
     // put here sub project as dependencies
     implementation(project(":pvexample-main"))
     implementation(project(":infra-web"))
-    implementation(project(":pvexample-jpa"))
+    implementation(project(":infra-jpa"))
     implementation(project(":infra-liquibase"))
 }
 
