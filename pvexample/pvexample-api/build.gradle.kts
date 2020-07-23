@@ -19,6 +19,10 @@ allprojects {
     }
 
     dependencies {
+        compileOnly("org.springframework.boot:spring-boot-configuration-processor")
+        compileOnly("org.projectlombok:lombok:1.18.12")
+        annotationProcessor("org.projectlombok:lombok:1.18.12")
+
         testImplementation("org.assertj:assertj-core")
         testImplementation("org.mockito:mockito-core:2.24.0")
         testImplementation("org.mockito:mockito-junit-jupiter:2.24.0")
@@ -41,6 +45,7 @@ dependencies {
     // put here sub project as dependencies
     implementation(project(":pvexample-main"))
     implementation(project(":infra-web"))
+    implementation(project(":pvexample-jpa"))
     implementation(project(":infra-liquibase"))
 }
 

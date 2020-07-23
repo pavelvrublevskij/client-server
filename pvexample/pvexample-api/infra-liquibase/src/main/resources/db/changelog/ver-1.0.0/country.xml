@@ -5,7 +5,7 @@
 
     <changeSet id="country_table" author="pavelvrublevskij@gmail.lt">
         <createTable tableName="country">
-            <column name="id" type="smallint" autoIncrement="true">
+            <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true"/>
             </column>
             <column name="country_code" type="VARCHAR(3)">
@@ -15,6 +15,12 @@
                 <constraints nullable="false"/>
             </column>
             <column name="supported" type="BOOLEAN" defaultValueBoolean="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
         </createTable>

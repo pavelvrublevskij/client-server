@@ -39,6 +39,12 @@ spring:
   liquibase:
     change-log: classpath:/db/changelog-master.xml
 
+  jpa:
+    # For production recommended to keep as false
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
 ## Logging
 logging:
   file:
