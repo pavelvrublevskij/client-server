@@ -43,6 +43,7 @@ allprojects {
 
 dependencies {
     // put here sub project as dependencies
+    implementation(project(":security"))
     implementation(project(":pvexample-main"))
     implementation(project(":infra-web"))
     implementation(project(":infra-jpa"))

@@ -1,4 +1,5 @@
 dependencies {
+  implementation(project(":security"))
   implementation(project(":infra-web"))
   implementation(project(":infra-jpa"))
   implementation(project(":infra-liquibase"))
