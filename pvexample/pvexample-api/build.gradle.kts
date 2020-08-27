@@ -1,6 +1,6 @@
 plugins {
     java
-    id("org.springframework.boot") version "2.2.6.RELEASE"
+    id("org.springframework.boot") version "2.3.2.RELEASE"
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
 }
 
@@ -10,8 +10,7 @@ allprojects {
     apply(plugin = "io.spring.dependency-management")
 
     configure<JavaPluginConvention> {
-        //TODO: sourceCompatibility = JavaVersion.VERSION_11
-        sourceCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
     }
 
     repositories {
@@ -51,7 +50,7 @@ dependencies {
 }
 
 tasks.wrapper {
-    version = "6.3"
+    version = "6.6"
 }
 
 springBoot {
