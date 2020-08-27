@@ -6,6 +6,9 @@
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="changelog/ver-1.0.0/hibernate_sequence.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/ver-1.0.0/role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/ver-1.0.0/users.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/ver-1.0.0/users_role.xml" relativeToChangelogFile="true"/>
     <include file="changelog/ver-1.0.0/country.xml" relativeToChangelogFile="true"/>
 
     <!--  Leave inputs of data always below -->
